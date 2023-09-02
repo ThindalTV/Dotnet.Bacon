@@ -14,4 +14,8 @@
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\FBacon\FBacon.fsproj" />
+  </ItemGroup>
+
 </Project>

@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bacon", "Bacon.csproj", "{1
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "VBacon", "..\VBacon\VBacon.vbproj", "{E22D103B-6538-401D-91AF-D9CBB95A3628}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FBacon", "..\FBacon\FBacon.fsproj", "{55F9D34C-3DC4-42FE-B9BB-76A0C7C8ED0C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{E22D103B-6538-401D-91AF-D9CBB95A3628}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E22D103B-6538-401D-91AF-D9CBB95A3628}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E22D103B-6538-401D-91AF-D9CBB95A3628}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55F9D34C-3DC4-42FE-B9BB-76A0C7C8ED0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55F9D34C-3DC4-42FE-B9BB-76A0C7C8ED0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55F9D34C-3DC4-42FE-B9BB-76A0C7C8ED0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55F9D34C-3DC4-42FE-B9BB-76A0C7C8ED0C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
