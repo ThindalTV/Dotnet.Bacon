@@ -11,6 +11,14 @@
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 	</PropertyGroup>
 	<ItemGroup>
+	  <None Remove="bacon.lua" />
+	</ItemGroup>
+	<ItemGroup>
+	  <Content Include="bacon.lua">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Content>
+	</ItemGroup>
+	<ItemGroup>
 	  <ProjectReference Include="..\VBacon\VBacon.vbproj" />
 	</ItemGroup>
 </Project>

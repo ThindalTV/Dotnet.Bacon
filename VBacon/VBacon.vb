@@ -1,5 +1,5 @@
 ﻿Public Class VBacon
-    Public Shared Function GetBaconStrips() As String
-        Return FBacon.FBacon.GetBaconStrips()
-    End Function
+    Public Shared Sub GetBaconStrips()
+        FBacon.FBacon.GetBaconStrips()
+    End Sub
 End Class

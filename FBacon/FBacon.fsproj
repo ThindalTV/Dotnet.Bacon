@@ -9,4 +9,8 @@
     <Compile Include="FBacon.fs" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="NLua" Version="1.6.3" />
+  </ItemGroup>
+
 </Project>
