@@ -10,4 +10,7 @@
 		<PackageOutputPath>./nupkg</PackageOutputPath>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 	</PropertyGroup>
+	<ItemGroup>
+	  <ProjectReference Include="..\VBacon\VBacon.vbproj" />
+	</ItemGroup>
 </Project>
