@@ -11,16 +11,8 @@
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 	</PropertyGroup>
 	<ItemGroup>
-	  <None Remove="bacon.lua" />
+		<PackageReference Include="Spectre.Console" Version="0.47.0" />
+		<PackageReference Include="System.CommandLine" Version="2.0.0-beta4.22272.1" />
+		<ProjectReference Include="..\VBacon\VBacon.vbproj" />
 	</ItemGroup>
-	<ItemGroup>
-	  <Content Include="bacon.lua">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
-	</ItemGroup>
-	<ItemGroup>
-    <ProjectReference Include="..\VBacon\VBacon.vbproj" />
-    <PackageReference Include="Spectre.Console" Version="0.47.0" />
-    <PackageReference Include="System.CommandLine" Version="2.0.0-beta4.22272.1" />
-  </ItemGroup>
 </Project>
