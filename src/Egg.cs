@@ -41,7 +41,10 @@ sealed class Egg
   {
     var res = new Vector2(w, h);
 
-    var canvas = new Canvas(w, h);
+    var canvas = new Canvas(w, h)
+    {
+      Scale = false
+    };
     var clock = Stopwatch.StartNew();
 
     void Updater(LiveDisplayContext ldc)

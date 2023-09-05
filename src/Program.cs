@@ -28,13 +28,18 @@ var rootCommand = new RootCommand("Everything is better with Bacon");
   var widthOption = new Option<int>(
       name: "--width"
     , description: "Width of the canvas"
-    , getDefaultValue: () => 70
+    , getDefaultValue: () => AnsiConsole.Profile.Width/2
     );
 
   var heightOption = new Option<int>(
       name: "--height"
     , description: "Height of the canvas"
-    , getDefaultValue: () => 40
+    , getDefaultValue: () => AnsiConsole.Profile.Height
+    );
+
+  var lug00berOption = new Option<bool?>(
+      name: "--lug00ber"
+    , description: "lug00ber likes cubes just like me"
     );
 
   var eggCommand = new Command("egg", "If you need some Egg with the Bacon")
@@ -55,6 +60,27 @@ var rootCommand = new RootCommand("Everything is better with Bacon");
     , heightOption
     );
   rootCommand.AddCommand(eggCommand);
+
+  var cubeCommand = new Command("cube", "Computers were made for rotating cubes")
+  {
+    parallelOption
+  , durationOption
+  , widthOption
+  , heightOption
+  , lug00berOption
+  };
+
+  cubeCommand.SetHandler((parallel, duration, width, height, lug00ber) => 
+    { 
+        new Cube().CubeMe(parallel, duration, width, height, lug00ber??false);
+    }
+    , parallelOption
+    , durationOption
+    , widthOption
+    , heightOption
+  , lug00berOption
+    );
+  rootCommand.AddCommand(cubeCommand);
 
   rootCommand.SetHandler(VBacon.VBacon.GetBaconStrips);
 }
