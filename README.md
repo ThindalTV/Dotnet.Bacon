@@ -13,8 +13,10 @@ dotnet tool install --global bacon
 ```
 
 ## Usage:
+```
 dotnet bacon
-
+```
 With eggs
-
+```
 dotnet bacon egg
+```
